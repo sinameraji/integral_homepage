@@ -9,7 +9,15 @@
 <body>
     <h1 class="hidden">Integral: new community app + AI community managers</h1>
     <div class="fullscreen-bg">
-        <img src="erevald.png" alt="Background" class="fullscreen-bg__image">
+        <img src="erevald.png" alt="Background" class="fullscreen-bg__image" id="bg-image">
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          var image = document.getElementById('bg-image');
+          if (window.innerWidth <= 768) { // Assuming 768px is your mobile breakpoint
+            image.src = 'erevald_mobile.png'; // Specify the mobile image path
+          }
+        });
+      </script>
 </body>
 </html>
